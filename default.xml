@@ -13,11 +13,15 @@
 <manifest>
     <!-- fetch is the path relative to the manifest repo path to get other repositories from -->
     <remote name="seL4"
-        fetch="."
+        fetch="../seL4"
     />
 
     <remote name="SEL4PROJ"
         fetch="../SEL4PROJ"
+    />
+
+    <remote name="adanis"
+        fetch="../~adanis"
     />
 
     <!-- default revision for each project, and name of the remote -->
@@ -26,11 +30,11 @@
     />
 
     <!-- list of 'projects' (i.e repositories), path is relative to the path in remote above -->
-    <project name="seL4.git" path="kernel" revision="experimental">
+    <project remote="adanis" name="seL4.git" path="kernel" revision="vtx">
         <linkfile src="libsel4" dest="libs/libsel4"/>
     </project>
 
-    <project name="camkes-tool.git" path="tools/camkes">
+    <project remote="adanis" name="camkes-tool.git" path="tools/camkes" revision="vtx">
         <linkfile src="toplevel.mk" dest="Makefile"/>
         <linkfile src="Kbuild" dest="Kbuild"/>
         <linkfile src="docs/index.md" dest="camkes_README.md"/>
@@ -38,14 +42,14 @@
         <linkfile src="libsel4muslccamkes" dest="libs/libsel4muslccamkes"/>
     </project>
 
-    <project name="capdl.git" path="projects/capdl">
+    <project remote="adanis" name="capdl.git" path="projects/capdl" revision="vtx">
         <linkfile src="capdl-loader-app" dest="apps/capdl-loader-experimental"/>
         <linkfile src="capDL-tool" dest="tools/capDL"/>
         <linkfile src="python-capdl-tool" dest="tools/python-capdl"/>
     </project>
 
     <project name="musllibc.git" path="libs/libmuslc" revision="sel4"/>
-    <project remote="SEL4PROJ" name="global-components.git" path="projects/global-components"/>
+    <project remote="SEL4PROJ" name="global-components.git" path="projects/global-components" revision="68c1886b5a0899b49ffa5ce6d9f78c4385eef17f"/>
 
     <project name="seL4_tools.git" path="projects/tools">
         <linkfile src="kbuild-tool" dest="tools/kbuild"/>
@@ -62,14 +66,14 @@
         <linkfile src="libutils" dest="libs/libutils"/>
     </project>
 
-    <project name="seL4_libs" path="projects/seL4_libs" revision="9adacd75afd2980b070081fe3372e85323b30b5e">
+    <project remote="adanis" name="seL4_libs" path="projects/seL4_libs" revision="vtx">
         <linkfile src="libsel4allocman" dest="libs/libsel4allocman"/>
         <linkfile src="libsel4bench" dest="libs/libsel4bench"/>
         <linkfile src="libsel4debug" dest="libs/libsel4debug"/>
         <linkfile src="libsel4muslcsys" dest="libs/libsel4muslcsys"/>
         <linkfile src="libsel4platsupport" dest="libs/libsel4platsupport"/>
         <linkfile src="libsel4simple" dest="libs/libsel4simple"/>
-        <linkfile src="libsel4simple-stable" dest="libs/libsel4simple-stable"/>
+        <linkfile src="libsel4simple-default" dest="libs/libsel4simple-default"/>
         <linkfile src="libsel4sync" dest="libs/libsel4sync"/>
         <linkfile src="libsel4utils" dest="libs/libsel4utils"/>
         <linkfile src="libsel4vka" dest="libs/libsel4vka"/>
@@ -77,7 +81,7 @@
         <linkfile src="libsel4vspace" dest="libs/libsel4vspace"/>
     </project>
 
-    <project name="camkes-vm.git" path="projects/vm">
+    <project remote="adanis" name="camkes-vm.git" path="projects/vm" revision="vtx">
         <!-- symlinks to make the project structure fit the build system -->
         <linkfile src="Kconfig" dest="Kconfig"/>
         <linkfile src="configs" dest="configs"/>
