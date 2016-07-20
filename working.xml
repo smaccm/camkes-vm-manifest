@@ -35,10 +35,10 @@
   </project>
   <project name="global-components.git" path="projects/global-components" remote="SEL4PROJ" revision="68c1886b5a0899b49ffa5ce6d9f78c4385eef17f"/>
   <project name="musllibc.git" path="libs/libmuslc" revision="b5c66eef4a8bb274d7a4b9b5b82bce412224dbf9" upstream="sel4"/>
-  <project name="seL4.git" path="kernel" remote="adanis" revision="57e74899ca9cf4e6267f9c8832c64c06a2d6b5aa" upstream="vtx">
+  <project name="seL4.git" path="kernel" remote="adanis" revision="c7f730cb2a6d77f47e51348dcb4e7e9833452cf6" upstream="vtx">
     <linkfile dest="libs/libsel4" src="libsel4"/>
   </project>
-  <project name="seL4_libs" path="projects/seL4_libs" remote="adanis" revision="93b5de0b04232530aca371fe6d862550dd457748" upstream="vtx">
+  <project name="seL4_libs" path="projects/seL4_libs" remote="adanis" revision="73d67c2b397b3c3f405cfabd1f14767c6987a2ee" upstream="vtx">
     <linkfile dest="libs/libsel4allocman" src="libsel4allocman"/>
     <linkfile dest="libs/libsel4bench" src="libsel4bench"/>
     <linkfile dest="libs/libsel4debug" src="libsel4debug"/>

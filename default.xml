@@ -30,7 +30,7 @@
     />
 
     <!-- list of 'projects' (i.e repositories), path is relative to the path in remote above -->
-    <project remote="adanis" name="seL4.git" path="kernel" revision="vtx">
+    <project remote="adanis" name="seL4.git" path="kernel" revision="rtvtx">
         <linkfile src="libsel4" dest="libs/libsel4"/>
     </project>
 
@@ -66,7 +66,7 @@
         <linkfile src="libutils" dest="libs/libutils"/>
     </project>
 
-    <project remote="adanis" name="seL4_libs" path="projects/seL4_libs" revision="vtx">
+    <project remote="adanis" name="seL4_libs" path="projects/seL4_libs" revision="rtvtx">
         <linkfile src="libsel4allocman" dest="libs/libsel4allocman"/>
         <linkfile src="libsel4bench" dest="libs/libsel4bench"/>
         <linkfile src="libsel4debug" dest="libs/libsel4debug"/>
@@ -81,7 +81,7 @@
         <linkfile src="libsel4vspace" dest="libs/libsel4vspace"/>
     </project>
 
-    <project remote="adanis" name="camkes-vm.git" path="projects/vm" revision="vtx">
+    <project remote="adanis" name="camkes-vm.git" path="projects/vm" revision="rtvtx">
         <!-- symlinks to make the project structure fit the build system -->
         <linkfile src="Kconfig" dest="Kconfig"/>
         <linkfile src="configs" dest="configs"/>
