@@ -12,7 +12,7 @@
     <linkfile dest="libs/libsel4camkes" src="libsel4camkes"/>
     <linkfile dest="libs/libsel4muslccamkes" src="libsel4muslccamkes"/>
   </project>
-  <project name="camkes-vm.git" path="projects/vm" revision="cace318c6ba4d5e84a7313719cef6290c3b2f295" upstream="gtt_deliverable">
+  <project name="camkes-vm.git" path="projects/vm" revision="23afa906b340195f78d13f597c2c8f9adab0e085" upstream="gtt_deliverable">
     <linkfile dest="Kconfig" src="Kconfig"/>
     <linkfile dest="configs" src="configs"/>
     <linkfile dest="libs/libsel4cxx" src="libsel4cxx"/>
@@ -27,17 +27,17 @@
     <linkfile dest="apps/cxx" src="apps/cxx"/>
     <linkfile dest="README.md" src="README.md"/>
   </project>
-  <project name="capdl.git" path="projects/capdl" revision="df5f14ac94962ddff673f9cf2335c91d3c19e24f" upstream="gtt_deliverable">
+  <project name="capdl.git" path="projects/capdl" revision="1c6889979ab0a250fed842bd8197df60ebf5ede5" upstream="gtt_deliverable">
     <linkfile dest="apps/capdl-loader-experimental" src="capdl-loader-app"/>
     <linkfile dest="tools/capDL" src="capDL-tool"/>
     <linkfile dest="tools/python-capdl" src="python-capdl-tool"/>
   </project>
   <project name="global-components.git" path="projects/global-components" remote="SEL4PROJ" revision="68c1886b5a0899b49ffa5ce6d9f78c4385eef17f"/>
   <project name="musllibc.git" path="libs/libmuslc" revision="b5c66eef4a8bb274d7a4b9b5b82bce412224dbf9" upstream="sel4"/>
-  <project name="seL4.git" path="kernel" revision="c7f730cb2a6d77f47e51348dcb4e7e9833452cf6" upstream="gtt_deliverable">
+  <project name="seL4.git" path="kernel" revision="162522625e11d2730e154851f3e515f535360d64" upstream="gtt_deliverable">
     <linkfile dest="libs/libsel4" src="libsel4"/>
   </project>
-  <project name="seL4_libs" path="projects/seL4_libs" revision="73d67c2b397b3c3f405cfabd1f14767c6987a2ee" upstream="gtt_deliverable">
+  <project name="seL4_libs" path="projects/seL4_libs" revision="2d8620cd249b84a92290dd7e96d63c93eb625cf6" upstream="gtt_deliverable">
     <linkfile dest="libs/libsel4allocman" src="libsel4allocman"/>
     <linkfile dest="libs/libsel4bench" src="libsel4bench"/>
     <linkfile dest="libs/libsel4debug" src="libsel4debug"/>
