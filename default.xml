@@ -13,7 +13,7 @@
 <manifest>
     <!-- fetch is the path relative to the manifest repo path to get other repositories from -->
     <remote name="seL4"
-        fetch="../seL4"
+        fetch="."
     />
 
     <remote name="SEL4PROJ"
