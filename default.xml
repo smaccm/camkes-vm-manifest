@@ -94,6 +94,9 @@
         <linkfile src="README.md" dest="README.md"/>
     </project>
 
+    <project name="camkes-vm-manifest.git" path="projects/vm-manifest" revision="gtt_deliverable">
+        <linkfile src="GVR-BOT-README.md" dest="GVR-BOT-README.md"/>
+    </project>
 
 </manifest>
 
