@@ -78,7 +78,7 @@
         <linkfile src="libsel4vspace" dest="libs/libsel4vspace"/>
     </project>
 
-    <project name="camkes-vm.git" path="projects/vm" branth="ubuntu-tmp">
+    <project name="camkes-vm.git" path="projects/vm" branch="ubuntu-tmp">
         <!-- symlinks to make the project structure fit the build system -->
         <linkfile src="Kconfig" dest="Kconfig"/>
         <linkfile src="configs" dest="configs"/>
