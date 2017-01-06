@@ -13,11 +13,15 @@
 <manifest>
     <!-- fetch is the path relative to the manifest repo path to get other repositories from -->
     <remote name="seL4"
-        fetch="."
+        fetch="../seL4"
     />
 
     <remote name="SEL4PROJ"
         fetch="../SEL4PROJ"
+    />
+  
+    <remote name="current"
+	fetch="."
     />
 
     <!-- default revision for each project, and name of the remote -->
@@ -30,7 +34,7 @@
         <linkfile src="libsel4" dest="libs/libsel4"/>
     </project>
 
-    <project name="camkes-tool.git" path="tools/camkes" revision="ubuntu-tmp">
+    <project name="camkes-tool.git" path="tools/camkes" revision="ubuntu-tmp" remote="current">
         <linkfile src="toplevel.mk" dest="Makefile"/>
         <linkfile src="Kbuild" dest="Kbuild"/>
         <linkfile src="docs/index.md" dest="camkes_README.md"/>
@@ -53,7 +57,7 @@
         <linkfile src="elfloader-tool" dest="tools/elfloader"/>
     </project>
 
-    <project name="util_libs.git" path="projects/util_libs" revision="ubuntu-tmp2">
+    <project name="util_libs.git" path="projects/util_libs" revision="ubuntu-tmp2" remote="current">
         <linkfile src="libcpio" dest="libs/libcpio"/>
         <linkfile src="libelf" dest="libs/libelf"/>
         <linkfile src="libethdrivers" dest="libs/libethdrivers"/>
@@ -78,7 +82,7 @@
         <linkfile src="libsel4vspace" dest="libs/libsel4vspace"/>
     </project>
 
-    <project name="camkes-vm.git" path="projects/vm" revision="ubuntu-tmp2">
+    <project name="camkes-vm.git" path="projects/vm" revision="ubuntu-tmp2" remote="current">
         <!-- symlinks to make the project structure fit the build system -->
         <linkfile src="Kconfig" dest="Kconfig"/>
         <linkfile src="configs" dest="configs"/>
